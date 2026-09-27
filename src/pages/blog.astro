@@ -1,5 +1,9 @@
 ---
+import { getCollection } from 'astro:content';
 
+const posts = (await getCollection('blog')).sort(
+	(a, b) => b.data.date.valueOf() - a.data.date.valueOf()
+);
 ---
 
 <html lang="en">
@@ -22,5 +26,13 @@
 		</nav>
 
 		<h1>Blog</h1>
+		<ul>
+			{posts.map((post) => (
+				<li>
+					<a href={`/blog/${post.id}/`}>{post.data.title}</a>
+					<time datetime={post.data.date.toISOString()}>{post.data.date.toLocaleDateString('en-US', { dateStyle: 'long' })}</time>
+				</li>
+			))}
+		</ul>
 	</body>
 </html>

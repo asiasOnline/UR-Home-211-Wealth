@@ -9,10 +9,10 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
+    "cms": "npx decap-server",
     "astro": "astro"
   },
   "dependencies": {
-    "@storyblok/astro": "^10.3.2",
     "astro": "^7.3.5"
   },
   "allowScripts": {

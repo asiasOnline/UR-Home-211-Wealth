@@ -22,5 +22,19 @@
 		</nav>
 
 		<h1>211 Wealth</h1>
+
+		<!-- Netlify Identity: sends editors to /admin/ after they accept an invite or log in -->
+		<script is:inline src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+		<script is:inline>
+			if (window.netlifyIdentity) {
+				window.netlifyIdentity.on('init', (user) => {
+					if (!user) {
+						window.netlifyIdentity.on('login', () => {
+							document.location.href = '/admin/';
+						});
+					}
+				});
+			}
+		</script>
 	</body>
 </html>

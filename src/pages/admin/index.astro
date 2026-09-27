@@ -1,0 +1,20 @@
+---
+// Decap CMS admin UI. The CMS config lives in public/admin/config.yml.
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="robots" content="noindex" />
+		<title>Content Manager</title>
+		<!-- Absolute path so the config is found whether the URL is /admin or /admin/ -->
+		<link href="/admin/config.yml" type="text/yaml" rel="cms-config-url" />
+		<!-- Netlify Identity handles editor login for the git-gateway backend -->
+		<script is:inline src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+	</head>
+	<body>
+		<script is:inline src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+	</body>
+</html>

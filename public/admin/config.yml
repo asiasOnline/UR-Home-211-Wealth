@@ -1,0 +1,32 @@
+backend:
+  name: git-gateway
+  branch: main
+
+# Lets you edit locally without logging in: run `npx decap-server` alongside `astro dev`
+local_backend: true
+
+media_folder: "public/images/uploads" # Where uploaded files are saved in the repo
+public_folder: "/images/uploads" # The URL path used for uploaded files on the site
+
+collections:
+  - name: "blog" # Used in routes, e.g., /admin/#/collections/blog
+    label: "Blog"
+    folder: "src/content/blog" # Must match the "blog" collection in src/content.config.ts
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "text", required: false }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Featured Image", name: "thumbnail", widget: "image", required: false }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "pages"
+    label: "Pages"
+    files: # Each entry is one fixed page; editors can change it but not create or delete it
+      - label: "About"
+        name: "about"
+        file: "src/content/pages/about.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
