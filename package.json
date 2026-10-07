@@ -1,5 +1,5 @@
 {
-  "name": "ur-home-211-wealth",
+  "name": "",
   "type": "module",
   "version": "0.0.1",
   "engines": {
@@ -9,11 +9,10 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "cms": "npx decap-server",
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^7.3.5"
+    "astro": "^7.3.6"
   },
   "allowScripts": {
     "esbuild": true

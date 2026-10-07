@@ -1,40 +1,11 @@
 ---
+import Welcome from '../components/Welcome.astro';
+import Layout from '../layouts/Layout.astro';
 
+// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
+// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>211 Wealth's UR Home</title>
-	</head>
-	<body>
-		<nav>
-			<a href="/">Home</a>
-			<a href="/about/">About</a>
-			<a href="/services/">Services</a>
-			<a href="/events/">Events</a>
-			<a href="/blog/">Blog</a>
-			<a href="/contact/">Contact Us</a>
-		</nav>
-
-		<h1>211 Wealth</h1>
-
-		<!-- Netlify Identity: sends editors to /admin/ after they accept an invite or log in -->
-		<script is:inline src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-		<script is:inline>
-			if (window.netlifyIdentity) {
-				window.netlifyIdentity.on('init', (user) => {
-					if (!user) {
-						window.netlifyIdentity.on('login', () => {
-							document.location.href = '/admin/';
-						});
-					}
-				});
-			}
-		</script>
-	</body>
-</html>
+<Layout>
+	<Welcome />
+</Layout>
