@@ -1,5 +1,20 @@
+---
+import { Button } from "@/components/ui/button"
+import { getBlock } from "@/lib/notion-content"
+
+const headline = getBlock("3f64fbaf-9f23-801f-b557-ecc5711682c2")
+const subHeadline = getBlock("3f64fbaf-9f23-8041-a680-d6f74f29ada4")
+const primaryButton = getBlock("3f64fbaf-9f23-80c1-a647-eebad5b94db5")
+const secondaryButton = getBlock("3f64fbaf-9f23-80e7-ad34-e03dbc67f6a1")
+---
+
 <section id="hero" class="flex">
     <div>
-        <h1>We Understand & We’re Here to Help</h1>
+        <h1 set:html={headline.html} />
+        <p set:html={subHeadline.html} />
+        <div class="flex gap-4">
+            <Button size="lg">{primaryButton.text}</Button>
+            <Button variant="secondary" size="lg">{secondaryButton.text}</Button>
+        </div>
     </div>
 </section>
