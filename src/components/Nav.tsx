@@ -74,7 +74,12 @@ const Nav = () => {
           ))}
           <li>
             <a href="/contact/" onClick={() => setIsMenuOpen(false)}>
-              <Button className='w-full' variant={'secondary'} size={'lg'}>Contact Us</Button>
+              <Button 
+                className='w-full' 
+                variant={'secondary'} 
+                size={'lg'}>
+                Contact Us
+              </Button>
             </a>
           </li>
         </ul>

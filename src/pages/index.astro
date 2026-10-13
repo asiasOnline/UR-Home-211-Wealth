@@ -1,7 +1,7 @@
 ---
 import Nav from '../components/Nav';
 import Hero from '../components/layout/Hero.astro';
-import Welcome from '../components/Welcome.astro';
+import Welcome from '../components/layout/Mission.astro';
 import Layout from '../layouts/Layout.astro';
 import "../styles/global.css";
 
@@ -11,6 +11,8 @@ import "../styles/global.css";
 
 <Layout>
 	<Nav client:load />
-	<Hero />
-	<Welcome />
+	<main>
+		<Hero />
+		<Welcome />
+	</main>
 </Layout>

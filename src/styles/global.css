@@ -2,7 +2,7 @@
 @import "tw-animate-css";
 @import "shadcn/tailwind.css";
 @import "@fontsource-variable/dm-sans";
-@import "@fontsource-variable/outfit";
+@import "@fontsource-variable/aleo";
 
 @custom-variant dark (&:is(.dark *));
 
@@ -47,7 +47,7 @@
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
   --font-sans: 'DM Sans Variable', sans-serif;
-  --font-heading: 'Outfit Variable', sans-serif;
+  --font-heading: 'Aleo Variable', serif;
 }
 
 :root {
@@ -58,7 +58,7 @@
   --card-foreground: oklch(0.145 0 0);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
+  --primary: oklch(0.5215 0.1117 131.01);
   --primary-foreground: oklch(0.985 0 0);
   --secondary: oklch(0.5684 0.1318 46.18);
   --secondary-foreground: oklch(0.9986 0.0066 106.52);
@@ -128,5 +128,13 @@
   }
   html {
     @apply font-sans;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-heading;
   }
 }

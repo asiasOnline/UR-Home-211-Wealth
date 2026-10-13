@@ -1,6 +1,7 @@
 ---
 import { Button } from "@/components/ui/button"
 import { getBlock } from "@/lib/notion-content"
+import ImageGrid from "../ImageGrid"
 
 const headline = getBlock("3f64fbaf-9f23-801f-b557-ecc5711682c2")
 const subHeadline = getBlock("3f64fbaf-9f23-8041-a680-d6f74f29ada4")
@@ -8,13 +9,14 @@ const primaryButton = getBlock("3f64fbaf-9f23-80c1-a647-eebad5b94db5")
 const secondaryButton = getBlock("3f64fbaf-9f23-80e7-ad34-e03dbc67f6a1")
 ---
 
-<section id="hero" class="flex">
-    <div>
-        <h1 set:html={headline.html} />
-        <p set:html={subHeadline.html} />
+<section id="hero" class="py-6 mt-10 flex gap-10 items-center justify-center">
+    <div class="max-w-128 flex flex-col gap-4">
+        <h1 class="text-5xl font-heading font-bold leading-[120%]" set:html={headline.html} />
+        <p class="text-xl font-light" set:html={subHeadline.html} />
         <div class="flex gap-4">
-            <Button size="lg">{primaryButton.text}</Button>
-            <Button variant="secondary" size="lg">{secondaryButton.text}</Button>
+            <Button variant="default" size="lg">{primaryButton.text}</Button>
+            <Button variant="outline" size="lg">{secondaryButton.text}</Button>
         </div>
     </div>
+    <ImageGrid />
 </section>
