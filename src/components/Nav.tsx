@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import logo from '../assets/211-Wealth-primary-color-logo-svg.svg'
+import logo from '@/assets/logos/211-Wealth-primary-color-logo-svg.svg'
 import { Button } from '@/components/ui/button';
 import { FiMenu } from "react-icons/fi";
 import { FiX } from "react-icons/fi";
