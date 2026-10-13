@@ -1,7 +1,7 @@
 {
   "pageId": "3f24fbaf-9f23-803c-ab8d-c3ad9b31f739",
   "title": "211 UR Home Website Content",
-  "lastEditedTime": "2026-10-11T18:39:00.000Z",
+  "lastEditedTime": "2026-10-13T21:25:00.000Z",
   "sections": {
     "hero": {
       "title": "Hero",
@@ -53,6 +53,10 @@
           "type": "paragraph",
           "text": "Get Involved",
           "html": "Get Involved"
+        },
+        {
+          "id": "3f84fbaf-9f23-80bc-814e-c3051d873fb0",
+          "type": "divider"
         }
       ]
     },
@@ -100,6 +104,10 @@
           "type": "paragraph",
           "text": "Learn More",
           "html": "Learn More"
+        },
+        {
+          "id": "3f84fbaf-9f23-808e-8bdd-e0bb765b95fe",
+          "type": "divider"
         }
       ]
     },
@@ -129,6 +137,564 @@
           "type": "paragraph",
           "text": "In San Bernardino County…",
           "html": "In San Bernardino County…"
+        },
+        {
+          "id": "3f64fbaf-9f23-8018-9b8a-d6e4ef319044",
+          "type": "heading_2",
+          "text": "Stat1",
+          "html": "Stat1"
+        },
+        {
+          "id": "3f64fbaf-9f23-8089-81bd-d67aea8360b6",
+          "type": "paragraph",
+          "text": "17,000+",
+          "html": "17,000+"
+        },
+        {
+          "id": "3f64fbaf-9f23-8002-ab87-df8cffe40f9c",
+          "type": "paragraph",
+          "text": "People experienced homelessness in 2025.",
+          "html": "People experienced homelessness in 2025."
+        },
+        {
+          "id": "3f64fbaf-9f23-8008-a25d-ec528c551bf2",
+          "type": "heading_2",
+          "text": "Stat2",
+          "html": "Stat2"
+        },
+        {
+          "id": "3f64fbaf-9f23-80be-8ba8-fb24ad64e537",
+          "type": "paragraph",
+          "text": "1 In 8",
+          "html": "1 In 8"
+        },
+        {
+          "id": "3f64fbaf-9f23-80fc-9fd9-f3b22e46964f",
+          "type": "paragraph",
+          "text": "Residents live below the poverty line.",
+          "html": "Residents live below the poverty line."
+        },
+        {
+          "id": "3f64fbaf-9f23-8003-b053-db08cbc9a392",
+          "type": "heading_2",
+          "text": "Stat3",
+          "html": "Stat3"
+        },
+        {
+          "id": "3f64fbaf-9f23-8089-9de0-fa8df00b471b",
+          "type": "paragraph",
+          "text": "14%",
+          "html": "14%"
+        },
+        {
+          "id": "3f64fbaf-9f23-80ff-93a8-e533192b9899",
+          "type": "paragraph",
+          "text": "Of women live below the poverty line.",
+          "html": "Of women live below the poverty line."
+        },
+        {
+          "id": "3f64fbaf-9f23-80e6-a79f-f5f939cd52c3",
+          "type": "heading_2",
+          "text": "Stat4",
+          "html": "Stat4"
+        },
+        {
+          "id": "3f64fbaf-9f23-80b6-b602-f217efd10f0a",
+          "type": "paragraph",
+          "text": "22%",
+          "html": "22%"
+        },
+        {
+          "id": "3f64fbaf-9f23-80d1-9670-ca2c56ff3417",
+          "type": "paragraph",
+          "text": "Increase in homelessness since 2020.",
+          "html": "Increase in homelessness since 2020."
+        },
+        {
+          "id": "3f84fbaf-9f23-80da-83d8-de6f3251e2a0",
+          "type": "divider"
+        }
+      ]
+    },
+    "how-we-help": {
+      "title": "How We Help",
+      "blocks": [
+        {
+          "id": "3f84fbaf-9f23-80fa-910d-e90e3012e92c",
+          "type": "heading_2",
+          "text": "Section Header",
+          "html": "Section Header"
+        },
+        {
+          "id": "3f84fbaf-9f23-8079-8837-d1af694e884b",
+          "type": "paragraph",
+          "text": "How We Help",
+          "html": "How We Help"
+        },
+        {
+          "id": "3f84fbaf-9f23-80c6-8923-cb4882dad186",
+          "type": "heading_2",
+          "text": "Section Sub Header",
+          "html": "Section Sub Header"
+        },
+        {
+          "id": "3f84fbaf-9f23-8004-a3c2-d49d51f62d7a",
+          "type": "paragraph",
+          "text": "Our mission is to serve women and families within the San Bernardino County area who are facing complex and challenging times. If any of the following feels familiar to you, we want to hear from you. ",
+          "html": "Our mission is to serve women and families within the San Bernardino County area who are facing complex and challenging times. If any of the following feels familiar to you, we want to hear from you. "
+        },
+        {
+          "id": "3f84fbaf-9f23-8052-ac7b-f0f1846c5655",
+          "type": "heading_2",
+          "text": "Residential Care Card",
+          "html": "Residential Care Card"
+        },
+        {
+          "id": "3f84fbaf-9f23-80a7-815e-f36b02c306a1",
+          "type": "heading_3",
+          "text": "Card Header",
+          "html": "Card Header"
+        },
+        {
+          "id": "3f84fbaf-9f23-808c-91ec-ecfd1b22d529",
+          "type": "paragraph",
+          "text": "Residential Care",
+          "html": "Residential Care"
+        },
+        {
+          "id": "3f84fbaf-9f23-800d-ae06-c27f9d336386",
+          "type": "heading_3",
+          "text": "Card Sub Header",
+          "html": "Card Sub Header"
+        },
+        {
+          "id": "3f84fbaf-9f23-8077-94e5-efcf7ff8667a",
+          "type": "paragraph",
+          "text": "Need a Safe Space?",
+          "html": "Need a Safe Space?"
+        },
+        {
+          "id": "3f84fbaf-9f23-8078-be77-cd5803abc344",
+          "type": "heading_3",
+          "text": "Card Description",
+          "html": "Card Description"
+        },
+        {
+          "id": "3f84fbaf-9f23-80bd-83d7-edc839a3b8cd",
+          "type": "paragraph",
+          "text": "Our residential care facility offers women and families a stable, supportive environment that supports the rebuilding process.",
+          "html": "Our residential care facility offers women and families a stable, supportive environment that supports the rebuilding process."
+        },
+        {
+          "id": "3f84fbaf-9f23-804c-a018-e28b447c9bae",
+          "type": "heading_2",
+          "text": "Food & Community Support Card",
+          "html": "Food &amp; Community Support Card"
+        },
+        {
+          "id": "3f84fbaf-9f23-8077-a38d-fb3891f2da99",
+          "type": "heading_3",
+          "text": "Card Header",
+          "html": "Card Header"
+        },
+        {
+          "id": "3f84fbaf-9f23-8039-a1f6-db1d484c0362",
+          "type": "paragraph",
+          "text": "Food & Community Support",
+          "html": "Food &amp; Community Support"
+        },
+        {
+          "id": "3f84fbaf-9f23-80cc-8069-f4fe8a8c4f3c",
+          "type": "heading_3",
+          "text": "Card Sub Header",
+          "html": "Card Sub Header"
+        },
+        {
+          "id": "3f84fbaf-9f23-807a-b165-eb845216fed1",
+          "type": "paragraph",
+          "text": "No One Should Go Hungry",
+          "html": "No One Should Go Hungry"
+        },
+        {
+          "id": "3f84fbaf-9f23-8083-9f66-cc597d1e4aaf",
+          "type": "heading_3",
+          "text": "Card Description",
+          "html": "Card Description"
+        },
+        {
+          "id": "3f84fbaf-9f23-80d8-91cc-e076f5849238",
+          "type": "paragraph",
+          "text": "Through community food programs and local partnerships, we work to ensure that balanced meals are accessible to the community.",
+          "html": "Through community food programs and local partnerships, we work to ensure that balanced meals are accessible to the community."
+        },
+        {
+          "id": "3f84fbaf-9f23-8035-bf08-f06a6a2b6b3d",
+          "type": "heading_2",
+          "text": "Crisis & Emergency Relief Card",
+          "html": "Crisis &amp; Emergency Relief Card"
+        },
+        {
+          "id": "3f84fbaf-9f23-80f1-ad4d-d7f724a29622",
+          "type": "heading_3",
+          "text": "Card Header",
+          "html": "Card Header"
+        },
+        {
+          "id": "3f84fbaf-9f23-80ea-a8c1-f58e7fc78c6e",
+          "type": "paragraph",
+          "text": "Crisis & Emergency Relief",
+          "html": "Crisis &amp; Emergency Relief"
+        },
+        {
+          "id": "3f84fbaf-9f23-80ce-a437-cae4ec415e5a",
+          "type": "heading_3",
+          "text": "Card Sub Header",
+          "html": "Card Sub Header"
+        },
+        {
+          "id": "3f84fbaf-9f23-8092-9ea3-e1b84ca969a0",
+          "type": "paragraph",
+          "text": "When You Need Help Right Now",
+          "html": "When You Need Help Right Now"
+        },
+        {
+          "id": "3f84fbaf-9f23-80dd-8de8-dab0ee2db34c",
+          "type": "heading_3",
+          "text": "Card Description",
+          "html": "Card Description"
+        },
+        {
+          "id": "3f84fbaf-9f23-8091-8184-d94f5f33c826",
+          "type": "paragraph",
+          "text": "Our crisis intervention and emergency relief services are made for the unmanageable moments to give you the ground to plan your next steps.",
+          "html": "Our crisis intervention and emergency relief services are made for the unmanageable moments to give you the ground to plan your next steps."
+        },
+        {
+          "id": "3f84fbaf-9f23-80d3-92d5-f32f0dcbceb5",
+          "type": "heading_2",
+          "text": "Section Footer",
+          "html": "Section Footer"
+        },
+        {
+          "id": "3f84fbaf-9f23-8075-9a42-d1f52d5cc52c",
+          "type": "paragraph",
+          "text": "Our organization is constantly striving to expand, and in the future we hope to incorporate job training, career counseling, and additional support services. Visit our Services page for a complete breakdown of our current and future support channels. ",
+          "html": "Our organization is constantly striving to expand, and in the future we hope to incorporate job training, career counseling, and additional support services. Visit our Services page for a complete breakdown of our current and future support channels. "
+        },
+        {
+          "id": "3f84fbaf-9f23-8089-8ebd-da35511ab488",
+          "type": "heading_2",
+          "text": "Primary Section Button",
+          "html": "Primary Section Button"
+        },
+        {
+          "id": "3f84fbaf-9f23-80f6-b13e-e4de2e367bd1",
+          "type": "paragraph",
+          "text": "Explore All Services",
+          "html": "Explore All Services"
+        },
+        {
+          "id": "3f84fbaf-9f23-806c-acdc-c20391bc970b",
+          "type": "divider"
+        }
+      ]
+    },
+    "it-s-ok-to-not-know-where-to-start": {
+      "title": "It’s OK To Not Know Where To Start",
+      "blocks": [
+        {
+          "id": "3f84fbaf-9f23-804c-b8eb-c5c3f9706aed",
+          "type": "heading_2",
+          "text": "Section Header",
+          "html": "Section Header"
+        },
+        {
+          "id": "3f84fbaf-9f23-80e1-ad61-f70979904b97",
+          "type": "paragraph",
+          "text": "It’s OK To Not Know Where To Start",
+          "html": "It’s OK To Not Know Where To Start"
+        },
+        {
+          "id": "3f84fbaf-9f23-8070-94b3-c6f23da73907",
+          "type": "heading_2",
+          "text": "Section Sub Header",
+          "html": "Section Sub Header"
+        },
+        {
+          "id": "3f84fbaf-9f23-804f-a924-da8c62a27b93",
+          "type": "paragraph",
+          "text": "Our mission is to serve women and families within the San Bernardino County area who are facing complex and challenging times. If any of the following feels familiar to you, we want to hear from you. ",
+          "html": "Our mission is to serve women and families within the San Bernardino County area who are facing complex and challenging times. If any of the following feels familiar to you, we want to hear from you. "
+        },
+        {
+          "id": "3f84fbaf-9f23-8031-b510-f768a45c548a",
+          "type": "heading_2",
+          "text": "Home Icon Card",
+          "html": "Home Icon Card"
+        },
+        {
+          "id": "3f84fbaf-9f23-8060-8db7-c1ed97bcf317",
+          "type": "heading_3",
+          "text": "Card Header",
+          "html": "Card Header"
+        },
+        {
+          "id": "3f84fbaf-9f23-8081-bceb-e6eedc6773c2",
+          "type": "paragraph",
+          "text": "Do you need a safe space to sleep?",
+          "html": "Do you need a safe space to sleep?"
+        },
+        {
+          "id": "3f84fbaf-9f23-8055-bdfd-f9f7c9472c13",
+          "type": "heading_3",
+          "text": "Card Description",
+          "html": "Card Description"
+        },
+        {
+          "id": "3f84fbaf-9f23-807f-83cd-ee5dc06be2af",
+          "type": "paragraph",
+          "text": "You may be fleeing an unsafe situation, or you no longer have stable housing for yourself or your children.",
+          "html": "You may be fleeing an unsafe situation, or you no longer have stable housing for yourself or your children."
+        },
+        {
+          "id": "3f84fbaf-9f23-8002-96bf-d93c473ea16b",
+          "type": "heading_2",
+          "text": "People Icon Card",
+          "html": "People Icon Card"
+        },
+        {
+          "id": "3f84fbaf-9f23-80ce-bed4-d2f0edfe5dbd",
+          "type": "heading_3",
+          "text": "Card Header",
+          "html": "Card Header"
+        },
+        {
+          "id": "3f84fbaf-9f23-801c-84e7-e7f7a69f6deb",
+          "type": "paragraph",
+          "text": "Are you doing it all alone?",
+          "html": "Are you doing it all alone?"
+        },
+        {
+          "id": "3f84fbaf-9f23-80bb-84fe-ddb51933d12c",
+          "type": "heading_3",
+          "text": "Card Description",
+          "html": "Card Description"
+        },
+        {
+          "id": "3f84fbaf-9f23-809c-95a8-fc882066dc25",
+          "type": "paragraph",
+          "text": "No safety net, no family nearby, no one to call? We understand that you’re managing a lot and need practical help.",
+          "html": "No safety net, no family nearby, no one to call? We understand that you’re managing a lot and need practical help."
+        },
+        {
+          "id": "3f84fbaf-9f23-80f8-8c96-c008a170e57d",
+          "type": "heading_2",
+          "text": "Change Icon Card",
+          "html": "Change Icon Card"
+        },
+        {
+          "id": "3f84fbaf-9f23-80f5-b49f-c2359bbe8688",
+          "type": "heading_3",
+          "text": "Card Header",
+          "html": "Card Header"
+        },
+        {
+          "id": "3f84fbaf-9f23-805c-ac10-e67cf444ba29",
+          "type": "paragraph",
+          "text": "Is it time for a change? ",
+          "html": "Is it time for a change? "
+        },
+        {
+          "id": "3f84fbaf-9f23-80c4-ae9c-d17cd85c64ca",
+          "type": "heading_3",
+          "text": "Card Description",
+          "html": "Card Description"
+        },
+        {
+          "id": "3f84fbaf-9f23-8034-970b-d8de8bd9933f",
+          "type": "paragraph",
+          "text": "If you’re in an unsustainable situation and need access to resources and a path forward, we can help you find your footing.",
+          "html": "If you’re in an unsustainable situation and need access to resources and a path forward, we can help you find your footing."
+        },
+        {
+          "id": "3f84fbaf-9f23-80df-91ab-dc6df54a70f7",
+          "type": "heading_2",
+          "text": "Who Qualifies Aside",
+          "html": "Who Qualifies Aside"
+        },
+        {
+          "id": "3f84fbaf-9f23-8001-a8b1-e19421df4027",
+          "type": "heading_3",
+          "text": "Aside Title",
+          "html": "Aside Title"
+        },
+        {
+          "id": "3f84fbaf-9f23-801a-ab01-c974c6a154b8",
+          "type": "paragraph",
+          "text": "Who Qualifies?",
+          "html": "Who Qualifies?"
+        },
+        {
+          "id": "3f84fbaf-9f23-80ac-9e3d-d3a820e0d798",
+          "type": "heading_3",
+          "text": "Qualification #1",
+          "html": "Qualification #1"
+        },
+        {
+          "id": "3f84fbaf-9f23-8043-8061-edec18e75d68",
+          "type": "paragraph",
+          "text": "Women aged 18 - 65",
+          "html": "Women aged 18 - 65"
+        },
+        {
+          "id": "3f84fbaf-9f23-8035-aec8-f40918d16477",
+          "type": "heading_3",
+          "text": "Qualification #2",
+          "html": "Qualification #2"
+        },
+        {
+          "id": "3f84fbaf-9f23-800e-8cc7-e1c70ac37ef2",
+          "type": "paragraph",
+          "text": "Single mothers and children ",
+          "html": "Single mothers and children "
+        },
+        {
+          "id": "3f84fbaf-9f23-801d-9c3a-d781eec6e309",
+          "type": "heading_3",
+          "text": "Qualification #3",
+          "html": "Qualification #3"
+        },
+        {
+          "id": "3f84fbaf-9f23-801d-b19e-e0255e68e6ee",
+          "type": "paragraph",
+          "text": "Individuals fleeing unsafe situations",
+          "html": "Individuals fleeing unsafe situations"
+        },
+        {
+          "id": "3f84fbaf-9f23-803c-9807-f13f831eccbb",
+          "type": "heading_3",
+          "text": "Qualification #4",
+          "html": "Qualification #4"
+        },
+        {
+          "id": "3f84fbaf-9f23-8093-9784-f1b6c0ccfb2f",
+          "type": "paragraph",
+          "text": "Those experiencing unemployment or underemployment",
+          "html": "Those experiencing unemployment or underemployment"
+        },
+        {
+          "id": "3f84fbaf-9f23-80dd-840c-ddd6f566e42c",
+          "type": "heading_3",
+          "text": "Outline Button Text",
+          "html": "Outline Button Text"
+        },
+        {
+          "id": "3f84fbaf-9f23-8016-8b1d-dbcffe9e87a2",
+          "type": "paragraph",
+          "text": "View Our Eligibility Requirements",
+          "html": "View Our Eligibility Requirements"
+        },
+        {
+          "id": "3f84fbaf-9f23-80ac-9e28-e734fd441831",
+          "type": "heading_2",
+          "text": "Section Footer",
+          "html": "Section Footer"
+        },
+        {
+          "id": "3f84fbaf-9f23-808f-a38b-f932a66ee6cf",
+          "type": "paragraph",
+          "text": "Still not sure if you’ll qualify? Reach out anyway. We’d rather talk with you and offer assistance  whether that means with 211 Wealth’s UR Home or at another facility.",
+          "html": "Still not sure if you’ll qualify? Reach out anyway. We’d rather talk with you and offer assistance  whether that means with 211 Wealth’s UR Home or at another facility."
+        },
+        {
+          "id": "3f84fbaf-9f23-8026-b73b-ed17530bcd89",
+          "type": "heading_3",
+          "text": "Secondary Button Text",
+          "html": "Secondary Button Text"
+        },
+        {
+          "id": "3f84fbaf-9f23-8083-a8c2-ea69b8791e72",
+          "type": "paragraph",
+          "text": "Contact Us",
+          "html": "Contact Us"
+        },
+        {
+          "id": "3f84fbaf-9f23-8046-ada2-dd5a34dad66c",
+          "type": "divider"
+        }
+      ]
+    },
+    "find-ways-to-support": {
+      "title": "Find Ways To Support",
+      "blocks": [
+        {
+          "id": "3f84fbaf-9f23-80a5-9720-cb5169ffe1a5",
+          "type": "heading_2",
+          "text": "Section Header",
+          "html": "Section Header"
+        },
+        {
+          "id": "3f84fbaf-9f23-80dc-80c0-d4821c67ad94",
+          "type": "paragraph",
+          "text": "Find Ways To Support",
+          "html": "Find Ways To Support"
+        },
+        {
+          "id": "3f84fbaf-9f23-80d5-8cc6-e8aa3ee3e962",
+          "type": "heading_2",
+          "text": "Section Sub Header",
+          "html": "Section Sub Header"
+        },
+        {
+          "id": "3f84fbaf-9f23-80f2-8506-cbcc4f65e42f",
+          "type": "paragraph",
+          "text": "Real change requires more than some good intentions, people who care are willing to show up. ",
+          "html": "Real change requires more than some good intentions, people who care are willing to show up. "
+        },
+        {
+          "id": "3f84fbaf-9f23-8010-a706-df5cf003068d",
+          "type": "paragraph",
+          "text": "For some this can mean donating ones time, financial contributions, or spreading the word. ",
+          "html": "For some this can mean donating ones time, financial contributions, or spreading the word. "
+        },
+        {
+          "id": "3f84fbaf-9f23-80d4-a176-f4fb67e51c51",
+          "type": "paragraph",
+          "text": "We appreciate any and all methods of support because it’s one additional source of aid for the community. ",
+          "html": "We appreciate any and all methods of support because it’s one additional source of aid for the community. "
+        },
+        {
+          "id": "3f84fbaf-9f23-801d-af7f-d0981882d9f9",
+          "type": "heading_2",
+          "text": "Section Primary Button",
+          "html": "Section Primary Button"
+        },
+        {
+          "id": "3f84fbaf-9f23-8024-a6fd-e918ec2ed9f9",
+          "type": "paragraph",
+          "text": "Get Involved Today",
+          "html": "Get Involved Today"
+        },
+        {
+          "id": "3f84fbaf-9f23-807d-8b4d-ff7275fb7149",
+          "type": "divider"
+        }
+      ]
+    },
+    "footer": {
+      "title": "Footer",
+      "blocks": [
+        {
+          "id": "3f84fbaf-9f23-80dd-9f2b-db0b5fe0840a",
+          "type": "heading_2",
+          "text": "Copyright Info",
+          "html": "Copyright Info"
+        },
+        {
+          "id": "3f84fbaf-9f23-808f-b7e9-c23f487a73d9",
+          "type": "paragraph",
+          "text": "2026 | 211 Wealth - UR Home Group Home Facility. All rights reserved. ",
+          "html": "2026 | 211 Wealth - UR Home Group Home Facility. All rights reserved. "
         }
       ]
     }
