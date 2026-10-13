@@ -43,9 +43,9 @@ const Nav = () => {
               </a>
             </li>
           ))}
-          <li className='mx-8'>
+          <li className='mx-4'>
             <a href="/contact/">
-              <Button variant={'secondary'} size={'lg'}>Contact Us</Button>
+              <Button variant={'secondary'} size={'xl'}>Contact Us</Button>
             </a>
           </li>
         </ul>
