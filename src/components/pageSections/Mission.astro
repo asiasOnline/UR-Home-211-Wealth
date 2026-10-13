@@ -1,9 +1,38 @@
 ---
-import waveBkgd from '@/assets/graphics/wave.svg'
+import { Button } from "@/components/ui/button"
+import { getBlock } from "@/lib/notion-content"
+import Wave from "../graphics/Wave";
+import FourWomenHugging from "@/assets/images/four-women-hugging.png"
+
+const sectionHeadline = getBlock("3f64fbaf-9f23-80f0-ae8a-dff0524bd9fc")
+const missionParagraph1 = getBlock("3f64fbaf-9f23-80e0-87cd-fc3bb5c3506b")
+const missionParagraph2 = getBlock("3f64fbaf-9f23-802c-b573-c1484fde2815")
+const missionButton = getBlock("3f64fbaf-9f23-80f2-bd67-cc1fdf5894ba")
 ---
 
-<section id="container">
-    
+<!-- Bottom margin makes room for the half of the photo that hangs below the wave -->
+<section class="my-60 mb-64">
+    <!-- viewBox is cropped to just the crest so the solid block below continues the wave -->
+    <Wave viewBox="0 80 1440 80" className="block w-full h-auto -mb-px pointer-events-none -scale-x-100" />
+    <div class="bg-[#1D7699] text-white px-8 pt-6">
+        <div class="mx-auto flex max-w-6xl flex-col-reverse items-center justify-center lg:flex-row gap-16 xl:gap-24">
+            <div class="w-full max-w-137.5 -mt-20 translate-y-1/6 lg:m-0 lg:translate-y-1/3">
+                <img
+                  src={FourWomenHugging.src}
+                  alt='Four women hugging'
+                  class="rounded-2xl w-full h-auto"
+                  width={640}
+                  height={360}
+                />
+            </div>
+            <div class="max-w-lg flex flex-col mt-8 gap-4 lg:pb-16">
+                <h2 class="text-3xl font-bold" set:html={sectionHeadline.html} />
+                <p>Asking for help takes courage, and that resolve deserves to be met with grace and understanding.</p>
+                <p>At 211 Wealth’s UR Home, our goal is to help capable individuals navigate difficulty, because we recognize that people are more than their circumstance.</p>
+                <Button variant="outline" size="xl" className="self-start text-foreground">{missionButton.text}</Button>
+            </div>
+        </div>
+    </div>
 </section>
 
 <style>
