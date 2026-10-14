@@ -43,9 +43,9 @@ const StatGrid = () => {
     <div className='grid grid-cols-2 grid-rows-2 gap-4'>
       {stats.map(({ header, description, styles }, i) => (
           // The outer cell stays put and owns the hover, so the stat doesn't flicker as it slides out from under the cursor
-          <div key={i} className='group max-w-60'>
-              <div className={`h-full min-h-48 px-8 flex flex-col gap-4 justify-center border bg-white transition duration-300 ease-out group-hover:bg-[#1D7699] group-hover:text-[#FFFFFA] group-hover:shadow-xl ${styles}`}>
-                  <div className='text-right'>
+          <div key={i} className='group max-w-64'>
+              <div className={`h-full min-h-52 px-8 flex flex-col gap-4 justify-center border bg-white transition duration-300 ease-out group-hover:bg-[#1D7699] group-hover:text-[#FFFFFA] group-hover:shadow-xl ${styles}`}>
+                  <div className='text-center'>
                       <p className='text-4xl font-heading font-bold' dangerouslySetInnerHTML={{ __html: header }} />
                   </div>
                   <div className='text-left'>

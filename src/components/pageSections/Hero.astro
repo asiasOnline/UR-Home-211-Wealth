@@ -3,19 +3,19 @@ import { Button } from "@/components/ui/button"
 import { getBlock } from "@/lib/notion-content"
 import ImageGrid from "../ImageGrid"
 
-const headline = getBlock("3f64fbaf-9f23-801f-b557-ecc5711682c2")
-const subHeadline = getBlock("3f64fbaf-9f23-8041-a680-d6f74f29ada4")
-const primaryButton = getBlock("3f64fbaf-9f23-80c1-a647-eebad5b94db5")
-const secondaryButton = getBlock("3f64fbaf-9f23-80e7-ad34-e03dbc67f6a1")
+const heroHeader = getBlock("3f64fbaf-9f23-801f-b557-ecc5711682c2")
+const heroSubheader = getBlock("3f64fbaf-9f23-8041-a680-d6f74f29ada4")
+const heroPrimaryButton = getBlock("3f64fbaf-9f23-80c1-a647-eebad5b94db5")
+const heroSecondaryButton = getBlock("3f64fbaf-9f23-80e7-ad34-e03dbc67f6a1")
 ---
 
 <section id="hero" class="py-6 px-8 mt-10 flex flex-col lg:flex-row gap-10 items-center justify-center">
     <div class="max-w-lg flex flex-col gap-4">
-        <h1 class="text-5xl font-heading font-bold leading-[120%]" set:html={headline.html} />
-        <p class="text-xl" set:html={subHeadline.html} />
+        <h1 class="text-5xl font-heading font-bold leading-[120%]" set:html={heroHeader.html} />
+        <p class="text-xl" set:html={heroSubheader.html} />
         <div class="flex gap-4">
-            <Button variant="default" size="xl">{primaryButton.text}</Button>
-            <Button variant="outline" size="xl">{secondaryButton.text}</Button>
+            <Button variant="default" size="xl">{heroPrimaryButton.text}</Button>
+            <Button variant="outline" size="xl">{heroSecondaryButton.text}</Button>
         </div>
     </div>
     <ImageGrid />
