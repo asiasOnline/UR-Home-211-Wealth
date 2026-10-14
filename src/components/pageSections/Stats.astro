@@ -1,13 +1,22 @@
 ---
 import { Button } from "@/components/ui/button"
+import StatGrid from "../StatGrid"
 import { getBlock } from "@/lib/notion-content"
 
-const sectionHeadline = getBlock("3f64fbaf-9f23-80f0-ae8a-dff0524bd9fc")
-const missionParagraph1 = getBlock("3f64fbaf-9f23-80e0-87cd-fc3bb5c3506b")
-const missionParagraph2 = getBlock("3f64fbaf-9f23-802c-b573-c1484fde2815")
-const missionButton = getBlock("3f64fbaf-9f23-80f2-bd67-cc1fdf5894ba")
+const statHeader =          getBlock("3f64fbaf-9f23-8019-9c27-dfae2747800c")
+const statParagraph =       getBlock("3f64fbaf-9f23-80a9-b34e-c97c46fe0eed")
+const statButton =          getBlock("3f84fbaf-9f23-80ae-8936-f69bedf57a9b")
+const statAsideHeader =     getBlock("3f84fbaf-9f23-80c2-a393-e89bdc74c50e")
 ---
 
-<section>
-
+<section class="flex justify-center items-center gap-24">
+    <div class="max-w-lg flex flex-col mt-8 gap-4 lg:pb-16">
+        <h2 class="text-3xl font-bold" set:html={statHeader.html} />
+        <p set:html={statParagraph.html}/>
+        <Button variant="outline" size="xl" className="self-start text-foreground">{statButton.text}</Button>
+    </div>
+    <aside>
+        <p class="text-2xl font-heading font-semibold mb-8" set:html={statAsideHeader.html}/>
+        <StatGrid />
+    </aside>
 </section>

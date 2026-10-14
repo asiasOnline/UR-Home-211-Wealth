@@ -20,8 +20,8 @@ const gridRows: GridImage[][] = [
         {image: foodDrive, alt: "Volunteers at a food drive", styles: wide},
     ],
     [
-        {image: momDaughter, alt: "Mother and daughter", styles: wide},
-        {image: motherChildCouch, alt: "Mother and child on a couch", styles: square},
+        {image: motherChildCouch, alt: "Mother and child on a couch",styles: wide},
+        {image: momDaughter, alt: "Mother and daughter",  styles: square},
     ],
 ]
 

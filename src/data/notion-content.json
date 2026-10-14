@@ -1,7 +1,7 @@
 {
   "pageId": "3f24fbaf-9f23-803c-ab8d-c3ad9b31f739",
   "title": "211 UR Home Website Content",
-  "lastEditedTime": "2026-10-13T21:25:00.000Z",
+  "lastEditedTime": "2026-10-13T23:20:00.000Z",
   "sections": {
     "hero": {
       "title": "Hero",
@@ -96,8 +96,8 @@
         {
           "id": "3f64fbaf-9f23-8053-914f-e575bff4c237",
           "type": "heading_2",
-          "text": "Secondary Button Text",
-          "html": "Secondary Button Text"
+          "text": "Outline Button Text",
+          "html": "Outline Button Text"
         },
         {
           "id": "3f64fbaf-9f23-80f2-bd67-cc1fdf5894ba",
@@ -123,24 +123,54 @@
         {
           "id": "3f64fbaf-9f23-8019-9c27-dfae2747800c",
           "type": "paragraph",
-          "text": "What We Stand For",
-          "html": "What We Stand For"
+          "text": "The Reality of the Numbers",
+          "html": "The Reality of the Numbers"
         },
         {
           "id": "3f64fbaf-9f23-80e2-a937-e34b1d62fd72",
           "type": "heading_2",
-          "text": "Section Sub Header",
-          "html": "Section Sub Header"
+          "text": "Section Description",
+          "html": "Section Description"
         },
         {
           "id": "3f64fbaf-9f23-80a9-b34e-c97c46fe0eed",
+          "type": "paragraph",
+          "text": "San Bernardino County is home to thousands of women and families navigating crises every day. These numbers represent real people and they’re exactly who 211 Wealth was made to serve. ",
+          "html": "San Bernardino County is home to thousands of women and families navigating crises every day. These numbers represent real people and they’re exactly who 211 Wealth was made to serve. "
+        },
+        {
+          "id": "3f84fbaf-9f23-8073-87ea-efed6bdd19dc",
+          "type": "heading_2",
+          "text": "Outline Button Text",
+          "html": "Outline Button Text"
+        },
+        {
+          "id": "3f84fbaf-9f23-80ae-8936-f69bedf57a9b",
+          "type": "paragraph",
+          "text": "Learn How You Can Help",
+          "html": "Learn How You Can Help"
+        },
+        {
+          "id": "3f84fbaf-9f23-805d-95a1-fa9c4088cead",
+          "type": "heading_2",
+          "text": "Stat Aside",
+          "html": "Stat Aside"
+        },
+        {
+          "id": "3f84fbaf-9f23-80a4-b888-fde32955671a",
+          "type": "heading_3",
+          "text": "Stat Aside Header",
+          "html": "Stat Aside Header"
+        },
+        {
+          "id": "3f84fbaf-9f23-80c2-a393-e89bdc74c50e",
           "type": "paragraph",
           "text": "In San Bernardino County…",
           "html": "In San Bernardino County…"
         },
         {
           "id": "3f64fbaf-9f23-8018-9b8a-d6e4ef319044",
-          "type": "heading_2",
+          "type": "heading_3",
           "text": "Stat1",
           "html": "Stat1"
         },
@@ -158,7 +188,7 @@
         },
         {
           "id": "3f64fbaf-9f23-8008-a25d-ec528c551bf2",
-          "type": "heading_2",
+          "type": "heading_3",
           "text": "Stat2",
           "html": "Stat2"
         },
@@ -176,7 +206,7 @@
         },
         {
           "id": "3f64fbaf-9f23-8003-b053-db08cbc9a392",
-          "type": "heading_2",
+          "type": "heading_3",
           "text": "Stat3",
           "html": "Stat3"
         },
@@ -194,7 +224,7 @@
         },
         {
           "id": "3f64fbaf-9f23-80e6-a79f-f5f939cd52c3",
-          "type": "heading_2",
+          "type": "heading_3",
           "text": "Stat4",
           "html": "Stat4"
         },
