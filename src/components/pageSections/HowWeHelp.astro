@@ -1,28 +1,10 @@
 ---
 import { Button } from "@/components/ui/button"
 import { getBlock } from "@/lib/notion-content"
-import { 
-    Card, 
-    CardHeader, 
-    CardTitle, 
-    CardContent,
-    CardDescription
-} from "@/components/ui/card"
-import LivingRoom from "@/assets/images/living-room.png"
-import FoodDriveGoods from "@/assets/images/canned-boxed-goods.png"
-import WomanFrustrated from "@/assets/images/hands-on-face.png"
+import ServiceCards from "@/components/ServiceCards";
 
 const helpHeader =                  getBlock("3f84fbaf-9f23-8079-8837-d1af694e884b");
 const helpParagraph =               getBlock("3f84fbaf-9f23-8004-a3c2-d49d51f62d7a");
-const residentCardTitle =           getBlock("3f84fbaf-9f23-808c-91ec-ecfd1b22d529");
-const residentCardSubtitle =        getBlock("3f84fbaf-9f23-8077-94e5-efcf7ff8667a");
-const residentCardDescription =     getBlock("3f84fbaf-9f23-80bd-83d7-edc839a3b8cd");
-const foodDriveCardTitle =          getBlock("3f84fbaf-9f23-8039-a1f6-db1d484c0362");
-const foodDriveCardSubtitle =       getBlock("3f84fbaf-9f23-807a-b165-eb845216fed1");
-const foodDriveCardDescription =    getBlock("3f84fbaf-9f23-80d8-91cc-e076f5849238");
-const crisisCardTitle =             getBlock("3f84fbaf-9f23-80ea-a8c1-f58e7fc78c6e");
-const crisisCardSubtitle =          getBlock("3f84fbaf-9f23-8092-9ea3-e1b84ca969a0");
-const crisisCardDescription =       getBlock("3f84fbaf-9f23-8091-8184-d94f5f33c826");
 const helpFooter =                  getBlock("3f84fbaf-9f23-8075-9a42-d1f52d5cc52c");
 const serviceButtonText =           getBlock("3f84fbaf-9f23-80f6-b13e-e4de2e367bd1");
 ---
@@ -32,57 +14,8 @@ const serviceButtonText =           getBlock("3f84fbaf-9f23-80f6-b13e-e4de2e367b
         <h2 class="text-3xl font-bold text-center pb-4" set:html={helpHeader.html} />
         <p set:html={helpParagraph.html}/>
     </div>
-    <div class="flex flex-col lg:flex-row gap-8 my-12">
-        <Card className="px-2 py-6 w-80">
-            <CardHeader>
-                <CardTitle className="text-xl" set:html={residentCardTitle.html}/>
-            </CardHeader>
-            <CardContent className="flex flex-col gap-2">
-                <img 
-                    src={LivingRoom.src}
-                    alt='Four women hugging'
-                    class="rounded-2xl w-full h-auto"
-                    width={320}
-                    height={240}
-                />
-                <p class="text-base font-semibold" set:html={residentCardSubtitle.html}/>
-                <CardDescription set:html={residentCardDescription.html} />
-            </CardContent>
-        </Card>
-        <Card className="px-2 py-6 w-80">
-            <CardHeader>
-                <CardTitle className="text-xl" set:html={foodDriveCardTitle.html}/>
-            </CardHeader>
-            <CardContent className="flex flex-col gap-2">
-                <img 
-                    src={FoodDriveGoods.src}
-                    alt='Four women hugging'
-                    class="rounded-2xl w-full h-auto"
-                    width={320}
-                    height={240}
-                />
-                <p class="text-base font-semibold" set:html={foodDriveCardSubtitle.html}/>
-                <CardDescription set:html={foodDriveCardDescription.html} />
-            </CardContent>
-        </Card>
-        <Card className="px-2 py-6 w-80">
-            <CardHeader>
-                <CardTitle className="text-xl" set:html={crisisCardTitle.html}/>
-            </CardHeader>
-            <CardContent className="flex flex-col gap-2">
-                <img 
-                    src={WomanFrustrated.src}
-                    alt='Four women hugging'
-                    class="rounded-2xl w-full h-auto"
-                    width={320}
-                    height={240}
-                />
-                <p class="text-base font-semibold" set:html={crisisCardSubtitle.html}/>
-                <CardDescription set:html={crisisCardDescription.html} />
-            </CardContent>
-        </Card>
-    </div>
-    <div class="max-w-xl flex flex-col gap-4">
+    <ServiceCards />
+    <div class="max-w-xl flex flex-col gap-10">
         <p set:html={helpFooter.html}/>
         <div class="mx-auto">
             <Button variant="default" size="xl">{serviceButtonText.text}</Button>

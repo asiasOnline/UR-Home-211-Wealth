@@ -1,8 +1,61 @@
 ---
 import { Button } from "@/components/ui/button"
 import { getBlock } from "@/lib/notion-content"
+import QualificationCards from "../QualificationCards";
+import RectContainer from "../graphics/RectContainer";
+import { GoCheckCircle } from "react-icons/go";
+
+const qualiHeader =             getBlock("3f84fbaf-9f23-80e1-ad61-f70979904b97");
+const qualiSubHeader =     getBlock("3f84fbaf-9f23-801a-ab01-c974c6a154b8");
+const qualification1 =     getBlock("3f84fbaf-9f23-8043-8061-edec18e75d68")
+const qualification2 =     getBlock("3f84fbaf-9f23-800e-8cc7-e1c70ac37ef2")
+const qualification3 =     getBlock("3f84fbaf-9f23-801d-b19e-e0255e68e6ee")
+const qualification4 =     getBlock("3f84fbaf-9f23-8093-9784-f1b6c0ccfb2f")
+const qualiButton =        getBlock("3f84fbaf-9f23-8016-8b1d-dbcffe9e87a2");
 ---
 
 <section>
-
+    <h2 class="text-3xl font-bold text-center pb-4" set:html={qualiHeader.html} />
+    <div class="flex justify-center">
+        <QualificationCards />
+    </div>
+    <div class="flex">
+        <div>
+            <div class="relative isolate px-10 py-12 text-white">
+                <RectContainer
+                    className="absolute inset-0 w-full h-full -z-10"
+                    preserveAspectRatio="none"
+                />
+            <h3 class="text-2xl font-semibold" set:html={qualiSubHeader.html}/>
+            <ul>
+                <li class="flex gap-2">
+                    <GoCheckCircle className="w-6 h-6"/>
+                    <p set:html={qualification1.html}/>
+                </li>
+                <li class="flex gap-2">
+                    <GoCheckCircle className="w-6 h-6"/>
+                    <p set:html={qualification2.html}/>
+                </li>
+                <li class="flex gap-2">
+                    <GoCheckCircle className="w-6 h-6"/>
+                    <p set:html={qualification3.html}/>
+                </li>
+                <li class="flex gap-2">
+                    <GoCheckCircle className="w-6 h-6"/>
+                    <p set:html={qualification4.html}/>
+                </li>
+            </ul>
+            </div>
+            <Button variant="outline" size="xl">{qualiButton.text}</Button>
+        </div>
+        <div>
+            <p>Still not sure if you’ll qualify? Reach out anyway. We’d rather talk with you and offer assistance  whether that means with 211 Wealth’s UR Home or at another facility.</p>
+            <Button 
+                className='w-full' 
+                variant={'secondary'} 
+                size={'lg'}>
+                Contact Us
+              </Button>
+        </div>
+    </div>
 </section>
