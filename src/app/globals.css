@@ -138,3 +138,11 @@
     @apply font-heading;
   }
 }
+/* Carried over from the old Astro Layout */
+html,
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #FFFFFA;
+}

@@ -1,3 +1,4 @@
+import Image, { type StaticImageData } from 'next/image'
 import twoHands from '@/assets/images/two-hands.png'
 import momDaughter from '@/assets/images/mom-daughter.png'
 import motherChildCouch from '@/assets/images/mother-child-couch.png'
@@ -5,7 +6,7 @@ import foodDrive from '@/assets/images/food-drive.png'
 import LeafGraphic from './graphics/LeafGraphic'
 
 interface GridImage {
-  image: ImageMetadata
+  image: StaticImageData
   alt: string
   styles: string
 }
@@ -35,14 +36,11 @@ const ImageGrid = () => {
       {gridRows.map((row, i) => (
           <div key={i} className='flex items-start gap-4'>
               {row.map(({ image, alt, styles }) => (
-                  <img
-                  key={image.src}
-                  src={image.src}
-                  width={image.width}
-                  height={image.height}
+                  <Image
+                  key={alt}
+                  src={image}
                   alt={alt}
                   className={`block basis-0 min-w-0 h-auto object-cover rounded-2xl ${styles}`}
-                  loading="lazy"
               />
               ))}
           </div>

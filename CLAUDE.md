@@ -1,22 +1,30 @@
+## Stack
+
+- Next.js (App Router) + React + TypeScript
+- Tailwind CSS v4 (via `@tailwindcss/postcss`) and shadcn/ui (Base UI primitives)
+- Content: currently pulled from Notion into `src/data/notion-content.json` (`npm run content:pull`) and read with `getBlock()` from `src/lib/notion-content.ts`. This is being replaced by Sanity.
+
+## Project structure
+
+- `src/app/layout.tsx`: root `<html>`/`<body>`, metadata, global CSS
+- `src/app/(site)/`: public marketing site (shared Nav layout, home page, about/programs/events/contact)
+- `src/components/sections/`: page sections (server components)
+- `src/components/ui/`: shadcn components
+- Components are server components by default; add `'use client'` only when a component needs state, effects, or event handlers (e.g. `Nav.tsx`).
+- Use `next/image` for images and `next/link` for internal links.
+
 ## Development
 
-When starting the dev server, use background mode:
-
 ```
-astro dev --background
+npm run dev     # dev server at http://localhost:3000
+npm run build   # production build
+npm run start   # serve the production build
 ```
-
-Manage the background server with `astro dev stop`, `astro dev status`, and `astro dev logs`.
 
 ## Documentation
 
-Full documentation: https://docs.astro.build
-
-Consult these guides before working on related tasks:
-
-- [Adding pages, dynamic routes, or middleware](https://docs.astro.build/en/guides/routing/)
-- [Working with Astro components](https://docs.astro.build/en/basics/astro-components/)
-- [Using React, Vue, Svelte, or other framework components](https://docs.astro.build/en/guides/framework-components/)
-- [Adding or managing content](https://docs.astro.build/en/guides/content-collections/)
-- [Adding styles or using Tailwind](https://docs.astro.build/en/guides/styling/)
-- [Supporting multiple languages](https://docs.astro.build/en/guides/internationalization/)
+- Next.js: https://nextjs.org/docs
+- [App Router routing](https://nextjs.org/docs/app/getting-started/layouts-and-pages)
+- [Server and Client Components](https://nextjs.org/docs/app/getting-started/server-and-client-components)
+- [Images](https://nextjs.org/docs/app/getting-started/images)
+- Tailwind CSS: https://tailwindcss.com/docs

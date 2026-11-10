@@ -1,3 +1,4 @@
+import Image, { type StaticImageData } from "next/image"
 import { getBlock } from "@/lib/notion-content"
 import { 
     Card, 
@@ -13,7 +14,7 @@ import WomanFrustrated from "@/assets/images/hands-on-face.png"
 interface CardProps {
   title: string
   subTitle: string
-  imageSrc: ImageMetadata
+  imageSrc: StaticImageData
   imageAlt: string
   description: string
 }
@@ -54,12 +55,10 @@ const ServiceCards = () => {
                 <CardTitle className="text-xl" dangerouslySetInnerHTML={{ __html: title}}/>
             </CardHeader>
             <CardContent className="flex flex-col gap-2">
-                <img 
-                    src={imageSrc.src}
+                <Image
+                    src={imageSrc}
                     alt={imageAlt}
                     className="rounded-2xl w-full h-auto"
-                    width={320}
-                    height={240}
                 />
                 <p className="text-base font-semibold" dangerouslySetInnerHTML={{ __html: subTitle}}/>
                 <CardDescription dangerouslySetInnerHTML={{ __html: description}} />
