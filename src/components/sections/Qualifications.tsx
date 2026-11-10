@@ -1,25 +1,16 @@
-import { Button } from "@/components/ui/button"
-import { getBlock } from "@/lib/notion-content"
+import CtaButton from "@/components/CtaButton"
 import QualificationCards from "@/components/QualificationCards"
 import RectContainer from "@/components/graphics/RectContainer"
+import RichText from "@/components/sanity/RichText"
+import type { QualificationsData } from "@/sanity/pageTypes"
 import { GoCheckCircle } from "react-icons/go"
 
-const Qualifications = () => {
-    const qualiHeader = getBlock("3f84fbaf-9f23-80e1-ad61-f70979904b97")
-    const qualiSubHeader = getBlock("3f84fbaf-9f23-801a-ab01-c974c6a154b8")
-    const qualifications = [
-        getBlock("3f84fbaf-9f23-8043-8061-edec18e75d68"),
-        getBlock("3f84fbaf-9f23-800e-8cc7-e1c70ac37ef2"),
-        getBlock("3f84fbaf-9f23-801d-b19e-e0255e68e6ee"),
-        getBlock("3f84fbaf-9f23-8093-9784-f1b6c0ccfb2f"),
-    ]
-    const qualiButton = getBlock("3f84fbaf-9f23-8016-8b1d-dbcffe9e87a2")
-
+const Qualifications = ({ data }: { data: QualificationsData }) => {
     return (
         <section>
-            <h2 className="text-3xl font-bold text-center pb-4" dangerouslySetInnerHTML={{ __html: qualiHeader.html ?? "" }} />
+            <h2 className="text-3xl font-bold text-center pb-4">{data.heading}</h2>
             <div className="flex justify-center">
-                <QualificationCards />
+                <QualificationCards cards={data.cards ?? []} />
             </div>
             <div className="flex flex-col lg:flex-row gap-8 px-4">
                 <div>
@@ -28,26 +19,26 @@ const Qualifications = () => {
                             className="absolute inset-0 w-full h-full -z-10"
                             preserveAspectRatio="none"
                         />
-                        <h3 className="text-2xl font-semibold" dangerouslySetInnerHTML={{ __html: qualiSubHeader.html ?? "" }} />
+                        <h3 className="text-2xl font-semibold">{data.checklistHeading}</h3>
                         <ul>
-                            {qualifications.map((qualification) => (
-                                <li key={qualification.id} className="flex gap-2">
+                            {data.checklist?.map((item, i) => (
+                                <li key={i} className="flex gap-2">
                                     <GoCheckCircle className="w-6 h-6" />
-                                    <p dangerouslySetInnerHTML={{ __html: qualification.html ?? "" }} />
+                                    <p>{item}</p>
                                 </li>
                             ))}
                         </ul>
                     </div>
-                    <Button variant="outline" size="xl">{qualiButton.text}</Button>
+                    <CtaButton cta={data.checklistCta} variant="outline" size="xl" />
                 </div>
                 <div>
-                    <p>Still not sure if you’ll qualify? Reach out anyway. We’d rather talk with you and offer assistance  whether that means with 211 Wealth’s UR Home or at another facility.</p>
-                    <Button
+                    <RichText value={data.footer} />
+                    <CtaButton
+                        cta={data.footerCta}
                         className="w-full"
                         variant="secondary"
-                        size="lg">
-                        Contact Us
-                    </Button>
+                        size="lg"
+                    />
                 </div>
             </div>
         </section>

@@ -1,24 +1,20 @@
-import { Button } from "@/components/ui/button"
-import { getBlock } from "@/lib/notion-content"
+import CtaButton from "@/components/CtaButton"
 import ServiceCards from "@/components/ServiceCards"
+import RichText from "@/components/sanity/RichText"
+import type { HowWeHelpData } from "@/sanity/pageTypes"
 
-const HowWeHelp = () => {
-    const helpHeader = getBlock("3f84fbaf-9f23-8079-8837-d1af694e884b")
-    const helpParagraph = getBlock("3f84fbaf-9f23-8004-a3c2-d49d51f62d7a")
-    const helpFooter = getBlock("3f84fbaf-9f23-8075-9a42-d1f52d5cc52c")
-    const serviceButtonText = getBlock("3f84fbaf-9f23-80f6-b13e-e4de2e367bd1")
-
+const HowWeHelp = ({ data }: { data: HowWeHelpData }) => {
     return (
         <section className="flex flex-col justify-center items-center my-40 py-16 border-t-20 border-b-20 border-[#E1EAD7]">
             <div className="max-w-xl">
-                <h2 className="text-3xl font-bold text-center pb-4" dangerouslySetInnerHTML={{ __html: helpHeader.html ?? "" }} />
-                <p dangerouslySetInnerHTML={{ __html: helpParagraph.html ?? "" }} />
+                <h2 className="text-3xl font-bold text-center pb-4">{data.heading}</h2>
+                <RichText value={data.intro} />
             </div>
-            <ServiceCards />
+            <ServiceCards services={data.services ?? []} />
             <div className="max-w-xl flex flex-col gap-10">
-                <p dangerouslySetInnerHTML={{ __html: helpFooter.html ?? "" }} />
+                <RichText value={data.footer} />
                 <div className="mx-auto">
-                    <Button variant="default" size="xl">{serviceButtonText.text}</Button>
+                    <CtaButton cta={data.cta} variant="default" size="xl" />
                 </div>
             </div>
         </section>

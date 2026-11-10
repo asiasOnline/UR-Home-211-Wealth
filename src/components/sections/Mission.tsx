@@ -1,15 +1,10 @@
-import Image from "next/image"
-import { Button } from "@/components/ui/button"
-import { getBlock } from "@/lib/notion-content"
+import CtaButton from "@/components/CtaButton"
 import Wave from "@/components/graphics/Wave"
-import FourWomenHugging from "@/assets/images/four-women-hugging.png"
+import RichText from "@/components/sanity/RichText"
+import SanityImage from "@/components/sanity/SanityImage"
+import type { MissionData } from "@/sanity/pageTypes"
 
-const Mission = () => {
-    const missionHeader = getBlock("3f64fbaf-9f23-80f0-ae8a-dff0524bd9fc")
-    const missionParagraph1 = getBlock("3f64fbaf-9f23-80e0-87cd-fc3bb5c3506b")
-    const missionParagraph2 = getBlock("3f64fbaf-9f23-802c-b573-c1484fde2815")
-    const missionButton = getBlock("3f64fbaf-9f23-80f2-bd67-cc1fdf5894ba")
-
+const Mission = ({ data }: { data: MissionData }) => {
     return (
         // Bottom margin makes room for the half of the photo that hangs below the wave
         <section className="my-52 mb-64">
@@ -18,19 +13,17 @@ const Mission = () => {
             <div className="bg-[#1D7699] text-[#FFFFFA] px-8 pt-6">
                 <div className="mx-auto flex max-w-6xl flex-col-reverse items-center justify-center lg:flex-row gap-16 xl:gap-24">
                     <div className="w-full max-w-137.5 -mt-20 translate-y-1/6 lg:m-0 lg:translate-y-1/3">
-                        <Image
-                            src={FourWomenHugging}
-                            alt="Four women hugging"
+                        <SanityImage
+                            image={data.image}
                             className="rounded-2xl w-full h-auto"
                             width={640}
-                            height={360}
+                            sizes="(min-width: 1024px) 550px, 100vw"
                         />
                     </div>
                     <div className="max-w-lg flex flex-col mt-8 gap-4 lg:pb-16">
-                        <h2 className="text-3xl font-bold" dangerouslySetInnerHTML={{ __html: missionHeader.html ?? "" }} />
-                        <p dangerouslySetInnerHTML={{ __html: missionParagraph1.html ?? "" }} />
-                        <p dangerouslySetInnerHTML={{ __html: missionParagraph2.html ?? "" }} />
-                        <Button variant="outline" size="xl" className="self-start text-foreground">{missionButton.text}</Button>
+                        <h2 className="text-3xl font-bold">{data.heading}</h2>
+                        <RichText value={data.body} className="flex flex-col gap-4" />
+                        <CtaButton cta={data.cta} variant="outline" size="xl" className="self-start text-foreground" />
                     </div>
                 </div>
             </div>
