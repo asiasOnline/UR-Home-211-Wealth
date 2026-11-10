@@ -1,4 +1,8 @@
+'use client'
+
 import { useState } from 'react';
+import Image from 'next/image';
+import Link from 'next/link';
 import logo from '@/assets/logos/211-Wealth-primary-color-logo-svg.svg'
 import { Button } from '@/components/ui/button';
 import { FiMenu } from "react-icons/fi";
@@ -11,9 +15,9 @@ interface NavLinkType {
 
 const navLinks: NavLinkType[] = [
   {name: 'Home', path: '/'},
-  {name: 'About', path: '/about/'},
-  {name: 'Programs', path: '/programs/'},
-  {name: 'Events', path: '/events/'},
+  {name: 'About', path: '/about'},
+  {name: 'Programs', path: '/programs'},
+  {name: 'Events', path: '/events'},
 ]
 
 const Nav = () => {
@@ -24,29 +28,29 @@ const Nav = () => {
       <div className='flex items-center justify-between'>
         <div>
           {/* Logo */}
-          <a href="/">
-            <img 
-              src={logo.src} 
+          <Link href="/">
+            <Image 
+              src={logo} 
               alt='211 Wealth Primary Color Logo'
               width={120}
               height={120}
               className='w-24 md:w-30'
             />
-          </a>
+          </Link>
         </div>
         {/* Nav Link Container */}
         <ul className='hidden items-center gap-8 md:flex'>
           {navLinks.map((link) => (
             <li key={link.name}>
-              <a href={link.path}>
+              <Link href={link.path}>
                 {link.name}
-              </a>
+              </Link>
             </li>
           ))}
           <li className='mx-4'>
-            <a href="/contact/">
+            <Link href="/contact">
               <Button variant={'secondary'} size={'xl'}>Contact Us</Button>
-            </a>
+            </Link>
           </li>
         </ul>
         {/* Mobile Menu Button */}
@@ -67,20 +71,20 @@ const Nav = () => {
         <ul id='mobile-menu' className='flex flex-col gap-4 py-4 md:hidden'>
           {navLinks.map((link) => (
             <li key={link.name}>
-              <a href={link.path} className='block py-1' onClick={() => setIsMenuOpen(false)}>
+              <Link href={link.path} className='block py-1' onClick={() => setIsMenuOpen(false)}>
                 {link.name}
-              </a>
+              </Link>
             </li>
           ))}
           <li>
-            <a href="/contact/" onClick={() => setIsMenuOpen(false)}>
+            <Link href="/contact" onClick={() => setIsMenuOpen(false)}>
               <Button 
                 className='w-full' 
                 variant={'secondary'} 
                 size={'lg'}>
                 Contact Us
               </Button>
-            </a>
+            </Link>
           </li>
         </ul>
       )}
