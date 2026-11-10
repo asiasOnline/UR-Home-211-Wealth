@@ -9,7 +9,7 @@ const Hero = () => {
     const heroSecondaryButton = getBlock("3f64fbaf-9f23-80e7-ad34-e03dbc67f6a1")
 
     return (
-        <section id="hero" className="py-6 px-8 mt-10 flex flex-col lg:flex-row gap-10 items-center justify-center">
+        <section id="hero" className="py-6 px-8 mt-10 overflow-x-clip flex flex-col lg:flex-row gap-10 items-center justify-center">
             <div className="max-w-lg flex flex-col gap-4">
                 <h1 className="text-5xl font-heading font-bold leading-[120%]" dangerouslySetInnerHTML={{ __html: heroHeader.html ?? "" }} />
                 <p className="text-xl" dangerouslySetInnerHTML={{ __html: heroSubheader.html ?? "" }} />

@@ -39,9 +39,9 @@ const cards: CardProps[] = [
 
 const QualificationCards = () => {
   return (
-    <div className="flex flex-col lg:flex-row gap-8 my-12">
+    <div className="flex flex-col lg:flex-row gap-8 my-12 px-4">
         {cards.map(({icon, title, description}, i) => (
-            <Card className="px-2 py-6 w-96" key={title}>
+            <Card className="px-2 py-6 w-full max-w-96" key={title}>
             <CardHeader>
                 <div className="flex justify-center">
                     <div className="w-12 h-12 flex justify-center items-center bg-[#E1EAD7] rounded-full">

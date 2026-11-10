@@ -21,7 +21,7 @@ const Qualifications = () => {
             <div className="flex justify-center">
                 <QualificationCards />
             </div>
-            <div className="flex">
+            <div className="flex flex-col lg:flex-row gap-8 px-4">
                 <div>
                     <div className="relative isolate px-10 py-12 text-white">
                         <RectContainer
